@@ -1,0 +1,336 @@
+.mainLoginContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.mainLoginContainer .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.loginContainer h1 {
+  width: 50%;
+  text-align: left;
+  color: #c8c8c5;
+}
+
+.loginContainer input {
+  width: 50%;
+  font-size: 1.3rem;
+  padding: 6px 10px;
+  margin: 0.6rem;
+  outline: none;
+  border: none;
+  background-color: #262626;
+  color: #c8c8c5;
+  border-radius: 1px;
+}
+
+.loginContainer .passwordInputContainer {
+  width: 60%;
+}
+
+.loginContainer .passwordInputContainer input {
+  margin-left: 0;
+  width: 90%;
+  margin-right: 0;
+}
+
+.loginContainer .passwordInputContainer div {
+  font-size: 1.3rem;
+  width: 10%;
+  display: inline-block;
+  padding: 6px 6px 6px 7px;
+  outline: none;
+  border: none;
+  background-color: #262626;
+  cursor: pointer;
+  transition: all 200ms linear;
+  text-align: center;
+}
+
+.loginContainer .passwordStrengthMessage {
+  width: 60%;
+  display: flex;
+  justify-content: left;
+}
+
+.loginContainer .passwordStrengthMessage .strengthBars {
+  height: 4px;
+  width: 25%;
+  margin-right: 2%;
+}
+
+.loginContainer .passwordStrengthMessage .tooWeakBar {
+  background-color: red;
+}
+
+.loginContainer .passwordStrengthMessage .weakBar {
+  background-color: coral;
+}
+
+.loginContainer .passwordStrengthMessage .mediumBar {
+  background-color: yellow;
+}
+
+.loginContainer .passwordStrengthMessage .strongBar {
+  background-color: green;
+}
+
+.mainLoginContainer .left .warningMessage {
+  color: coral;
+  font-size: 1.2rem;
+  background-color: cornsilk;
+  padding: 0 10px;
+  border-radius: 4px;
+  position: relative;
+  top: -60px;
+}
+
+.loginContainer .firstButton {
+  width: 25%;
+  outline: none;
+  border: none;
+  margin: 0.3rem;
+  font-size: 1.3rem;
+  padding: 4px 0;
+  font-weight: 600;
+  background-color: #00dcff;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.loginContainer .pageRouter {
+  width: 25%;
+}
+
+.loginContainer .pageRouter button {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.3rem;
+  padding: 4px 0;
+  font-weight: 600;
+  background-color: #00dcff;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.loginContainer .forgotPassword {
+  width: 50%;
+  cursor: pointer;
+  transition: all 120ms linear;
+  margin-bottom: 10px;
+}
+
+.loginContainer .forgotPassword a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.loginContainer .forgotPassword a:hover {
+  color: #00e2ff;
+}
+
+.loginContainer button:hover {
+  background-color: #00b5d2;
+}
+
+.mainLoginContainer .right {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainLoginContainer .right img {
+  height: 100%;
+  width: 100%;
+  background: no-repeat;
+  background-size: 100%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+
+  .loginContainer .passwordInputContainer {
+    width: 80%;
+  }
+
+  .loginContainer .passwordInputContainer input {
+    width: 87%;
+  }
+
+  .loginContainer .passwordInputContainer div {
+    width: 13%;
+  }
+
+  .mainLoginContainer .left {
+    width: 100%;
+  }
+
+  .mainLoginContainer .right {
+    display: none;
+  }
+
+  .loginContainer input {
+    width: 80%;
+  }
+
+  .loginContainer h1 {
+    width: 80%;
+  }
+
+  .loginContainer .forgotPassword {
+    width: 80%;
+  }
+
+  .loginContainer .firstButton {
+    width: 50%;
+  }
+
+  .loginContainer .pageRouter {
+    width: 50%;
+  }
+  .loginContainer .passwordStrengthMessage {
+    width: 80%;
+  }
+}
+
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+  .loginContainer .passwordInputContainer {
+    width: 70%;
+  }
+
+  .loginContainer input {
+    width: 70%;
+  }
+
+  .loginContainer h1 {
+    width: 70%;
+  }
+
+  .loginContainer .forgotPassword {
+    width: 70%;
+  }
+
+  .loginContainer .firstButton {
+    width: 35%;
+  }
+
+  .loginContainer .pageRouter {
+    width: 35%;
+  }
+
+  .loginContainer .passwordStrengthMessage {
+    width: 70%;
+  }
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .loginContainer .passwordInputContainer {
+    width: 50%;
+  }
+
+  .loginContainer input {
+    width: 50%;
+  }
+
+  .loginContainer h1 {
+    width: 50%;
+  }
+
+  .loginContainer .forgotPassword {
+    width: 50%;
+  }
+
+  .loginContainer .firstButton {
+    width: 30%;
+  }
+
+  .loginContainer .pageRouter {
+    width: 30%;
+  }
+  .loginContainer .passwordStrengthMessage {
+    width: 50%;
+  }
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .loginContainer .passwordInputContainer {
+    width: 70%;
+  }
+
+  .loginContainer .passwordInputContainer input {
+    width: 87%;
+  }
+
+  .loginContainer .passwordInputContainer div {
+    width: 13%;
+  }
+
+  .mainLoginContainer .left {
+    width: 50%;
+  }
+
+  .mainLoginContainer .right {
+    display: flex;
+  }
+
+  .loginContainer input {
+    width: 70%;
+  }
+
+  .loginContainer h1 {
+    width: 70%;
+  }
+
+  .loginContainer .forgotPassword {
+    width: 70%;
+  }
+
+  .loginContainer .passwordStrengthMessage {
+    width: 70%;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+
+  .loginContainer .passwordInputContainer {
+    width: 60%;
+  }
+
+  .loginContainer input {
+    width: 60%;
+  }
+
+  .loginContainer h1 {
+    width: 60%;
+  }
+
+  .loginContainer .forgotPassword {
+    width: 60%;
+  }
+
+  .loginContainer .passwordStrengthMessage {
+    width: 60%;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}

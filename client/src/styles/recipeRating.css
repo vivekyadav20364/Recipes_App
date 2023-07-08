@@ -1,0 +1,18 @@
+.recipeRating {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.RecipeRating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.RecipeRating .ratingCount {
+  font-size: 1.3rem;
+  margin-left: 10px;
+}

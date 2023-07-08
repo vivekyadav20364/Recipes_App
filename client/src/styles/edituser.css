@@ -1,0 +1,127 @@
+.EditUser {
+  width: calc(100% - 210px);
+  margin-left: 210px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.EditUser .formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.EditUser .formContainer .formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 10px 0;
+}
+
+.EditUser .formContainer .socialFormGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.EditUser .formContainer .socialFormGroup label {
+  width: 10%;
+}
+
+.EditUser .formContainer .socialFormGroup input {
+  width: 85%;
+}
+
+.EditUser .formContainer .formGroup input,
+textarea {
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 2px 10px;
+  background-color: #262626;
+  color: white;
+}
+
+.EditUser .formContainer .formGroup input[type="submit"] {
+  cursor: pointer;
+  background-color: #00dcff;
+  color: black;
+  font-weight: 700;
+}
+
+.EditUser .formContainer .formGroup p.userNameNotExist {
+  /* background-color: #006437; */
+  color: #3cf3a0;
+}
+
+.EditUser .formContainer .formGroup p.userNameExist {
+  /* background-color: #ff7171; */
+  color: #ff7171;
+}
+
+@media (min-width: 0px) {
+  .EditUser {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .EditUser .formContainer {
+    width: 100%;
+  }
+
+  .EditUser .formContainer .formGroup{
+    width: 85%;
+  }
+}
+
+@media (min-width: 481px) {
+}
+
+@media (min-width: 641px) {
+  .EditUser {
+    width: calc(100% - 210px);
+    margin-left: 210px;
+  }
+  .EditUser .formContainer {
+    width: 100%;
+  }
+
+  .EditUser .formContainer .formGroup {
+    width: 70%;
+  }
+}
+
+@media (min-width: 961px) {
+  .EditUser .formContainer {
+    width: 100%;
+  }
+  .EditUser .formContainer .formGroup {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .EditUser .formContainer {
+    width: 100%;
+  }
+  .EditUser .formContainer .formGroup {
+    width: 50%;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  .EditUser .formContainer {
+    width: 70%;
+  }
+  .EditUser .formContainer .formGroup {
+    width: 50%;
+  }
+}

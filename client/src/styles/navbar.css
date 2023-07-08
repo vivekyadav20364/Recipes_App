@@ -1,0 +1,102 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  border-right: 0.5px solid #80808033;
+  background-color: #080808;
+  z-index: 10;
+}
+
+.navbar .navPageRoutes {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.navbar .navPageRoutes:hover {
+  background-color: #262626;
+}
+
+.navbar .navPageRoutes.active {
+  background-color: #00dcff;
+}
+
+.navbar button{
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border: none;
+  position: relative;
+  border-radius: 0 10px 10px 0;
+  left: 200px;
+  cursor: pointer;
+  background-color: #7b68ee;
+  color: white;
+}
+
+.navbar button.downToGuest{
+  top: -345px;
+}
+
+.navbar button.downToUser{
+  top: -300px;
+}
+
+.openNav{
+  left: 0px;
+}
+
+.closeNav{
+  left: -210px;
+}
+
+@media (min-width:320px)  { 
+  /* smartphones, iPhone, portrait 480x320 phones */ 
+}
+
+
+@media (min-width:481px)  { 
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+  
+}
+
+@media (min-width:641px)  { 
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  .navbar {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    border-right: 0.5px solid #80808033;
+    /* transition: 200ms all linear; */
+    background-color: #080808;
+  }
+
+
+}
+@media (min-width:961px)  { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  .navbar {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    border-right: 0.5px solid #80808033;
+    /* transition: 200ms all linear; */
+    background-color: #080808;
+  }
+
+}
+@media (min-width:1025px) { 
+  /* big landscape tablets, laptops, and desktops */ 
+  
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

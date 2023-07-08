@@ -1,0 +1,214 @@
+.UserInfo {
+  width: calc(100% - 210px);
+  margin-left: 210px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.UserInfo .topSection {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.UserInfo .topSection .left {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.UserInfo .topSection .left img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.UserInfo .topSection .right {
+  width: 50%;
+}
+
+.UserInfo .topSection .right p {
+  margin: 20px 50px;
+  text-align: center;
+}
+
+.socialMediaLinkContainer {
+  display: flex;
+  /* width: 130px; */
+  justify-content: space-between;
+}
+
+.socialMediaLinkContainer a {
+  text-decoration: none;
+  background-color: transparent;
+  color: navajowhite;
+  margin: 0 20px 0 0;
+}
+
+.icon-hover {
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+
+.icon-hover:hover {
+  color: #ffc774;
+}
+
+.UserInfo .topSection .right .userName {
+  color: #00dcff;
+}
+
+.UserInfo .topSection .right .editLink {
+  display: inline-block;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  background-color: #80808052;
+  color: #ffffff9e;
+  padding: 1px 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.UserInfo .topSection .right .editLink:hover {
+  background-color: rgb(66, 66, 66);
+}
+
+.UserInfo .bottomSection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.UserInfo .bottomSection .text {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.UserInfo .bottomSection .text span {
+  font-size: 2.5rem;
+  width: 60%;
+  text-align: center;
+  border-bottom: 1.3px solid #69696991;
+}
+
+.UserInfo .bottomSection .recipeContainerAll {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: left;
+}
+
+@media (min-width: 0px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+
+  .UserInfo {
+    width: 100%;
+    margin-left: 0;
+    /* background-color: hotpink; */
+  }
+
+  .UserInfo .topSection {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .UserInfo .topSection .left img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .UserInfo .topSection .right {
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .UserInfo {
+    /* background-color: red; */
+  }
+}
+
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .UserInfo {
+    width: calc(100% - 210px);
+    margin-left: 210px;
+    /* background-color: blue; */
+  }
+}
+
+@media (min-width: 961px) {
+  .UserInfo {
+    width: calc(100% - 210px);
+    margin-left: 210px;
+    /* background-color: tomato; */
+  }
+
+  .UserInfo .topSection {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    flex-direction: row;
+  }
+
+  .UserInfo .topSection .left img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .UserInfo .topSection .left {
+    width: 40%;
+    display: flex;
+    border-radius: 50%;
+    justify-content: flex-end;
+  }
+
+  .UserInfo .topSection .right {
+    width: 60%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 35px;
+  }
+
+  .UserInfo .topSection .right p {
+    margin: 20px 20px 20px 0px;
+    text-align: left;
+  }
+
+  .UserInfo .bottomSection .recipeContainerAll {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: left;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}

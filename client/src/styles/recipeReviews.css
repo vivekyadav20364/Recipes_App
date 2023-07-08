@@ -1,0 +1,44 @@
+.reviewCount {
+  display: flex;
+  margin: 20px 0;
+  /* justify-content: center; */
+}
+
+.reviewCount button {
+  display: flex;
+  width: auto;
+  background-color: #8080803d;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: grey;
+  padding: 3px 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.singleReviewContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 7px 0;
+}
+
+.singleReviewContainer .reviewUserName {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.singleReviewContainer .reviewUserName .reviewTime {
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: 100;
+  color: grey;
+}
+
+.singleReviewContainer .reviewDescription {
+  font-weight: 300;
+  color: #a9a9a9ad;
+}
