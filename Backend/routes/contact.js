@@ -6,7 +6,7 @@ const nodemailer = require("nodemailer");
 const ContactModel = require("../Db/contact.js"); 
 
 const sendMail = "vivekmgs0321@gmail.com";
-const sendPassword = "qmjqqnpiqgzqhxwj";
+const sendPassword = "pguafkdgjxyyzqdv";
 
 router.post("/contactMe", async (req, res) => {
   let email = req.body.email;
