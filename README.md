@@ -1,6 +1,13 @@
-# recipe-website
+# recipe-App
 
-This project has two base folders - "client" and "server".
+This project has two base folders - "Frontend" and "Backend".
+
+## Features of this project
+
+1. Search recipe posted by the users and login user also able to give rating on that perticular recipe
+2. Anyone who is authenticated can able to post his/her recipe with all details like Name,description(how to make it),upload pic,links,etc).
+3. User can also contact to the admin of the website.
+4. Logged in user also able to Edit their recipe.
 
 ## Getting Started
 
@@ -12,28 +19,26 @@ To run this project:
 
 To run the frontend of the website:
 
-1. Open a terminal window and navigate to the *client* directory.
+1. Open a terminal window and navigate to the *Frontend* directory.
 2. Run the command `npm install` to install the required dependencies.
-3. Update the `ref.js` file with the new `BASE_URL` (the link of the server port).
-4. Run the command `npm start` to start the frontend of the website.
+3. Run the command `npm start` to start the frontend of the website.
 
 ### Backend
 
 To run the backend of the website:
 
-1. Open the terminal and move to the *server* directory.
-2. Run the command `npm install` to install the dependencies required for backend.
-3. Run the command `npm start` to start the server. 
+1. Open the terminal and move to the *Backend* directory.
+2. Configure `.env` and put database url in `DATABASE_URL`
+3. Run the command `npm install` to install the dependencies required for backend.
+4. Run the command `npm start` to start the server. 
 
 ## Conclusion
 
-With these steps, you should be able to run the recipe website project successfully.
+With these steps, you should be able to run the recipe App project successfully.
 
-Additional suggestions:
+Additional:
 
 <ul>
-<li>Consider adding more information about the project, such as its purpose, features, and technologies used.</li>
-<li>Consider adding troubleshooting steps in case the project doesn't work as expected. </li>
-<li>Consider including version information for dependencies to ensure consistency across different environments. </li>
+<li>I did not use 3rd party API(provided) to fetch recipe data because it provide only recipe name and its picture</li>
 </ul>
 
